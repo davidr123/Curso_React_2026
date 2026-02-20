@@ -2,7 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { HooksApp } from './HooksApp'
 import './index.css'
-import { TrafficLight } from './01-useState/TrafficLigth'
+// import { TrafficLight } from './01-useState/TrafficLigth'
+import { TrafficLigthWithEffect } from './02-useEffect/TrafficLigthWithEffect'
+import { TrafficLigthWithHook } from './02-useEffect/TrafficLigthWithHook'
 // import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
@@ -11,6 +13,10 @@ createRoot(document.getElementById('root')!).render(
     {/* <HooksApp></HooksApp>
      */}
 
-     <TrafficLight></TrafficLight>
+     {/* <TrafficLight></TrafficLight>
+      */}
+
+      {/* <TrafficLigthWithEffect></TrafficLigthWithEffect> */}
+      <TrafficLigthWithHook></TrafficLigthWithHook>
   </StrictMode>,
 )
